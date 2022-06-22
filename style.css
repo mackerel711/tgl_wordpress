@@ -1,0 +1,343 @@
+/*
+Theme Name: The Gen Laboratory
+Author: s0t4
+Description: This is a theme for The Gen Laboratory.
+Version: 1.0.0
+*/
+
+/* ================= 全体設定用 ================= */
+body{
+    background: black !important;
+}
+#wrapper{
+    width:90%;
+    margin: 0 auto;
+    min-height: 100vh;
+    position: relative;
+}
+
+/* ================= ヘッダー ================= */
+header{
+    text-align: center;
+    height:100px;
+    display: block;
+}
+#headerLogo{
+    margin-top:20px;
+    width:200px;
+}
+#barIcon{
+    display: none;
+}
+/* ================= カテゴリ ================= */
+.currentCat{
+    color: white;
+}
+.singlePostCat > a{
+    color: gray;
+    text-decoration: none;
+}
+.singlePostCat{
+    display: inline-block;
+    margin-right:20px;
+}
+.singlePostCat > a:hover{
+    color: white;
+    text-decoration: none;
+    transition: 0.5s;
+}
+#topPadding{
+    margin-top: 290px;
+}
+#categories{
+    margin-top:10px;
+}
+#categories > nav{
+    height:170px;
+    width:80%;
+    margin: 0 auto;
+}
+#categories > nav > ul{
+    padding-left:0px;
+    display: flex;
+    list-style: none;
+}
+#categories > nav > ul > li{
+    width:100%;
+    text-align: center;
+}
+#categories > nav > ul > li > ul{
+    margin-top:10px;
+    padding-left:0px;
+    list-style: none;
+}
+#categories > nav > ul > li > ul > li{
+    display: block;
+}
+#categories a{
+    color: gray;
+    text-decoration: none;
+}
+#categories a:hover{
+    color: white;
+    transition: 0.5s;
+}
+
+
+/* ================= コンテンツ ================= */
+/* ========== ピックアップ ========== */
+.abouttgl{
+    text-align: center;
+    height:300px;
+    font-size: 0.8em !important;
+    line-height: 2em;
+    color:gray;
+    margin-bottom:40px;
+}
+#pickup{
+    width:80%;
+    margin: 0 auto 5% auto;
+    position: relative;
+}
+.faicon{
+    color:gray;
+}
+.fa-chevron-left{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    top:45%;
+    left:10px;
+}
+.fa-chevron-right{
+    display: none;
+    position: absolute;
+    padding-left:20px;
+    z-index: 1;
+    top:45%;
+    right:10px;
+}
+#pickup > div > a{
+    color: white;
+}
+#pickup > div > a:hover{
+    transition: 0.5s;
+    color: gray;
+    text-decoration: none;
+}
+#pickup > div > a > img{
+    display: inline-block;
+    width:40%;
+    margin-left:20px;
+}
+#pickup > div > a > h2{
+    font-size:1.5em;
+    margin-left:5%;
+    margin-right: 20px;
+    vertical-align: middle;
+    display: inline-block;
+    width:45%;
+}
+/* ========== ページネーション ========== */
+#paginationArea{
+    width: 80%;
+    text-align: right;
+}
+.nav-links{
+    width:30%;
+    margin:0 auto;
+}
+.nav-links > *{
+    display: inline-block;
+    margin: 0 auto;;
+}
+.page-numbers:not(.current,.dots,.prev,.next){
+    border:solid gray 2px;
+}
+.page-numbers{
+    text-align: center;
+    display: inline-block;
+    width:20px;
+    color:white;
+}
+
+/* ========== サイドバー ========== */
+#sidebar{
+    border:solid;
+    height:200px;
+}
+
+/* ========== 3カラム部分 ========== */
+.col-md-4{
+    text-align: center;
+    margin-bottom:20px;
+}
+.col-md-4 > a > img{
+    width:90%;
+}
+
+.col-md-4 > a > h2{
+    font-size: 1.2em;
+    margin-top:5px;
+}
+.col-md-4 > a{
+    color: gray;
+}
+.col-md-4 > a:hover{
+    transition: 0.5s;
+    color:white;
+    text-decoration: none;
+}
+
+
+/* ================= single.php用 ================= */
+#contentArea{
+    width:60%;
+    margin: 0 auto;
+}
+#contentArea > h1{
+    color: gray;
+}
+#contentArea > p{
+    color: gray;
+}
+#contentArea > p > a{
+    color:gray;
+}
+img[class^="wp-image"]{
+    display: block;
+    width:auto;
+    height:auto;
+    margin:0 auto;
+}
+blockquote{
+    padding:15px;
+    max-width:100% !important;
+    border: dotted 2px white;
+}
+blockquote > p{
+    color: gray;
+    text-align: left;
+    font-size: 0.8em !important;
+}
+cite{
+    display: block;
+    color: gray !important;
+    font-style: normal;
+    font-size: 0.8em;
+    text-align: left !important;
+    line-height: 1.2em;
+}
+
+.relatedPostTitle{
+    margin-top: 50px;
+}
+.relatedPostTitle > a{
+    color:gray;
+}
+.relatedPostTitle > a:hover{
+    transition: 0.5s;
+    color:white;
+    text-decoration: none;
+}
+
+.relatedPostDiv{
+    text-align: center;
+}
+.relatedPostDiv > a{
+    color: gray;
+}
+.relatedPostDiv > a:hover{
+    transition: 0.5s;
+    color:white;
+    text-decoration: none;
+}
+
+.relatedPostDiv > a > img{
+    width:100%;
+}
+
+
+/* Comments */
+
+
+/* ================= レスポンシブ ================= */
+@media screen and (max-width: 480px){
+    #barIcon{
+        cursor: pointer;
+        display: block;
+        position: absolute;
+        top:30px;
+        right:20px;
+    }
+    #topPadding{
+        margin-top: 200px;
+    }
+    #categories{
+        margin-top: 10px;
+    }
+    #categories > nav{
+        width:100%;
+        height:120px;
+    }   
+    #categories li{
+        font-size: 10px;
+    }
+    .col-6 > a > h2{
+        font-size: 0.8em;
+    }
+
+    #contentArea{
+        width: 95%;
+        margin:0 auto;
+    }
+
+    #contentArea > h1{
+        font-size:1.2em;
+    }
+    #pickup > .col-12{
+        width:100%;
+        margin:0 auto;
+    }
+    #pickup > div > a > h2{
+        text-align: center;
+        display: block;
+        width:80%;
+        margin:0 auto;
+        font-size: 1em;
+    }
+    #pickup > div > a > img{
+        display: block;
+        width:80%;
+        margin:0 auto;
+    }
+
+/* ================= single.php用 ================= */
+    .relatedPostTitle{
+        color:white;
+        margin-top: 50px;
+    }
+    
+    .relatedPostDiv{
+        text-align: center;
+    }
+    .relatedPostDiv > a > p{
+        width:70px;
+        text-align: center;
+    }
+    .relatedPostDiv > a{
+        font-size: 10px;
+        color: gray;
+    }
+    .relatedPostDiv > a:hover{
+        transition: 0.5s;
+        color:white;
+        text-decoration: none;
+    }
+    
+    .relatedPostDiv > a > img{
+        width:70px;
+    }
+    
+}
+
